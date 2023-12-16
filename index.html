@@ -9,14 +9,36 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
+
         header {
-            background-color: #333;
+            position: relative;
+            overflow: hidden;
             color: white;
             text-align: center;
             padding: 1em;
         }
+
+        img.logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 100px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+        }
+
         section {
             max-width: 800px;
             margin: 2em auto;
@@ -25,9 +47,11 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         h1, h2 {
             color: #333;
         }
+
         p {
             line-height: 1.6;
             color: #555;
@@ -36,14 +60,23 @@
 </head>
 <body>
     <header>
-        <h1>Mohammed Asheruddin N</h1>
+        <!-- Logo -->
+        <img src="mohmdasher_logo.png" alt="MohmdAsher Logo" class="logo">
+
+        <!-- Video Background -->
+        <video autoplay loop muted playsinline>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1>Your Name</h1>
         <p>Welcome to my personal website!</p>
     </header>
 
     <section>
         <h2>About Me</h2>
         <p>
-            Hello! I am Asher, and this is my personal webpage. Feel free to explore and learn more about me.
+            Hello! I am Your Name, and this is my personal webpage. Feel free to explore and learn more about me.
         </p>
     </section>
 
@@ -62,7 +95,7 @@
     <section>
         <h2>Contact</h2>
         <p>
-            You can reach out to me via email at <a href="mailto:your@email.com">your@email.com</a>.
+            You can reach out to me via email at <a href="mailto:mohmdasher@email.com">your@email.com</a>.
         </p>
     </section>
 </body>
